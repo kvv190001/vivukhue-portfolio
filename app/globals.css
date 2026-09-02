@@ -32,6 +32,12 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Offset anchor-link scroll targets so sections land below the sticky header
+   instead of underneath it. */
+section[id] {
+  scroll-margin-top: 8rem;
+}
+
 /* Custom scrollbar for webkit */
 ::-webkit-scrollbar {
   width: 8px;

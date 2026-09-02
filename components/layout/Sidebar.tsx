@@ -6,10 +6,6 @@ export default function Sidebar() {
   return (
     <aside className="w-full lg:w-80 flex-shrink-0 lg:sticky lg:top-34 h-fit z-10">
       <Reveal className="bg-white text-black rounded-3xl p-8 shadow-2xl relative overflow-hidden text-center">
-        {/* Decorative Elements */}
-        <div className="absolute top-0 left-0 w-32 h-32 border-t-2 border-l-2 border-orange-500 rounded-tl-3xl opacity-20 border-dashed transform -translate-x-4 -translate-y-4" />
-        <div className="absolute bottom-16 right-0 w-32 h-32 border-b-2 border-r-2 border-orange-500 rounded-br-3xl opacity-20 border-dashed transform translate-x-4 translate-y-4" />
-
         {/* Profile Image */}
         <div className="relative w-48 h-56 mx-auto mb-6 rounded-2xl overflow-hidden bg-orange-600">
           <Image
