@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aaabad Ahmed - Software Engineer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style data-purpose="custom-styles">
+    body {
+      background-color: #111111;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .section-title {
+      position: relative;
+      font-size: 3rem;
+      line-height: 1;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      margin-bottom: 2rem;
+    }
+    
+    .section-title span.bg-text {
+      position: absolute;
+      top: 0.5em;
+      left: 0;
+      font-size: 3.5rem;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+      z-index: -1;
+      line-height: 1;
+    }
+
+    /* Custom scrollbar for webkit */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #111;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #333;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="antialiased selection:bg-orange-500 selection:text-white">
+<!-- BEGIN: Main Layout -->
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col lg:flex-row gap-12 lg:gap-24 relative">
+<!-- BEGIN: Left Sidebar (Sticky) -->
+<aside class="w-full lg:w-80 flex-shrink-0 lg:sticky lg:top-12 h-fit z-10">
+<div class="bg-white text-black rounded-3xl p-8 shadow-2xl relative overflow-hidden text-center">
+<!-- Decorative Elements -->
+<div class="absolute top-0 left-0 w-32 h-32 border-t-2 border-l-2 border-orange-500 rounded-tl-3xl opacity-20 border-dashed transform -translate-x-4 -translate-y-4"></div>
+<div class="absolute bottom-16 right-0 w-32 h-32 border-b-2 border-r-2 border-orange-500 rounded-br-3xl opacity-20 border-dashed transform translate-x-4 translate-y-4"></div>
+<!-- Profile Image -->
+<div class="relative w-48 h-56 mx-auto mb-6 rounded-2xl overflow-hidden bg-orange-600">
+<img alt="Aaabad Ahmed" class="w-full h-full object-cover mix-blend-multiply grayscale contrast-150" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz34G8A0LwFNMnE_gqx31GHsCgXGZKy8a0uWUI5GV_piPwxC46yCWYY2krfu0TjaDYTITe-zZabgVmrpiw3GRyKLzg7gS7VsMH08bUhabA5Jut6pb-XBNPC1WXUzAbJy6UxZn9dEfBRaZffw5oUkq44HO7irunAFRCi2zR_pltxUR3VHq7ABtqUp0Glvh5G1vpyq9toyVQ-2JKOuFskDOEqj_nBriIPin2twTV3tM6AXQuc0HIRa30"/>
+</div>
+<h1 class="text-2xl font-bold mb-2">Aaabad Ahmed</h1>
+<div class="flex justify-center mb-4">
+<div class="bg-orange-500 text-white rounded-full p-1.5 shadow-lg shadow-orange-500/30">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+</div>
+<p class="text-gray-500 text-sm mb-8 leading-relaxed">
+          A <strong class="text-black font-semibold">Software Engineer</strong> who has developed countless innovative solutions.
+        </p>
+<!-- Social Links -->
+<div class="flex justify-center gap-4 text-orange-500">
+<a class="hover:text-orange-600 transition-colors" href="#"><i class="fab fa-dribbble text-xl"></i></a>
+<a class="hover:text-orange-600 transition-colors" href="#"><i class="fab fa-twitter text-xl"></i></a>
+<a class="hover:text-orange-600 transition-colors" href="#"><i class="fab fa-instagram text-xl"></i></a>
+<a class="hover:text-orange-600 transition-colors" href="#"><i class="fab fa-youtube text-xl"></i></a>
+</div>
+</div>
+</aside>
+<!-- END: Left Sidebar -->
+<!-- BEGIN: Main Content Area -->
+<main class="w-full flex-1 space-y-32 pb-24">
+<!-- Navigation Icons (Top Right) -->
+<nav class="hidden lg:flex justify-end gap-6 text-gray-400 mb-12">
+<a class="hover:text-white transition-colors" href="#"><i class="fas fa-home"></i></a>
+<a class="hover:text-white transition-colors" href="#"><i class="far fa-folder"></i></a>
+<a class="hover:text-white transition-colors" href="#"><i class="fas fa-briefcase"></i></a>
+<a class="hover:text-white transition-colors" href="#"><i class="fas fa-microphone"></i></a>
+<a class="hover:text-white transition-colors" href="#"><i class="far fa-edit"></i></a>
+</nav>
+<!-- BEGIN: Hero Section -->
+<section class="space-y-12 mt-12 lg:mt-0" id="hero">
+<div>
+<h2 class="section-title">
+            SOFTWARE<br/>ENGINEER
+            <span class="bg-text hidden sm:block">ENGINEER</span>
+</h2>
+<p class="text-gray-400 max-w-md text-sm sm:text-base leading-relaxed">
+            Passionate about creating intuitive and engaging user experiences. Specialize in transforming ideas into beautifully crafted products.
+          </p>
+</div>
+<!-- Stats -->
+<div class="flex flex-wrap gap-8 sm:gap-16">
+<div>
+<div class="text-4xl sm:text-5xl font-bold mb-1">+12</div>
+<div class="text-xs text-gray-500 uppercase tracking-widest font-semibold">Years of<br/>Experience</div>
+</div>
+<div>
+<div class="text-4xl sm:text-5xl font-bold mb-1">+46</div>
+<div class="text-xs text-gray-500 uppercase tracking-widest font-semibold">Projects<br/>Completed</div>
+</div>
+<div>
+<div class="text-4xl sm:text-5xl font-bold mb-1">+20</div>
+<div class="text-xs text-gray-500 uppercase tracking-widest font-semibold">Worldwide<br/>Clients</div>
+</div>
+</div>
+<!-- Featured Skill Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Card 1 -->
+<div class="bg-[#F26A3A] rounded-2xl p-6 sm:p-8 flex flex-col justify-between aspect-square group cursor-pointer relative overflow-hidden transition-transform hover:-translate-y-1">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white to-transparent"></div>
+<div class="text-white bg-white/20 w-fit p-3 rounded-xl backdrop-blur-sm relative z-10">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div class="relative z-10">
+<h3 class="text-white font-bold text-xl uppercase leading-tight mb-4">Dynamic Animation,<br/>Motion Design</h3>
+<div class="flex justify-end">
+<span class="w-8 h-8 rounded-full border border-white/50 flex items-center justify-center text-white group-hover:bg-white group-hover:text-[#F26A3A] transition-colors">
+<i class="fas fa-arrow-right text-sm"></i>
+</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-[#B9FF36] rounded-2xl p-6 sm:p-8 flex flex-col justify-between aspect-square group cursor-pointer relative overflow-hidden transition-transform hover:-translate-y-1">
+<svg class="absolute inset-0 w-full h-full text-black/10" fill="none" preserveaspectratio="none" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M0 100L100 0M50 100L100 50M0 50L50 0" stroke="currentColor" stroke-width="1"></path></svg>
+<div class="text-black bg-black/10 w-fit p-3 rounded-xl backdrop-blur-sm relative z-10">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div class="relative z-10">
+<h3 class="text-black font-bold text-xl uppercase leading-tight mb-4">Framer, Figma,<br/>Wordpress, ReactJS</h3>
+<div class="flex justify-end">
+<span class="w-8 h-8 rounded-full border border-black/50 flex items-center justify-center text-black group-hover:bg-black group-hover:text-[#B9FF36] transition-colors">
+<i class="fas fa-arrow-right text-sm"></i>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Recent Projects Section -->
+<section class="space-y-8" id="projects">
+<h2 class="section-title">
+          RECENT<br/>PROJECTS
+          <span class="bg-text hidden sm:block">PROJECTS</span>
+</h2>
+<div class="space-y-6">
+<!-- Project 1 -->
+<a class="group flex items-center gap-6 p-4 -mx-4 rounded-2xl hover:bg-white/5 transition-colors" href="#">
+<div class="w-24 h-24 rounded-xl overflow-hidden flex-shrink-0 bg-gray-800">
+<img alt="NajmAI Project" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1hkL9jkVmrfAbITTs5VL7NIa_2wF8cZ_WBYFre5wObvvCsdgU5bubWFqy25JWdggRn_l9lckHNeI657cbZao9Cff5swNSD5oYOK6if51PcXJTqihpWJcD5-J0piMkX6letppUiL97c_Z4A5LaJZ-3lIcBdRWtrDhD2Vh8ZE27uTiGy1YyfospXFQrQUIwNTx56kilJqnCQytYOkRpi8cX7fWPuu0EdYzyHoYudueofiaYXrHuHd-Z"/>
+</div>
+<div class="flex-1">
+<h4 class="text-xl font-bold mb-1 group-hover:text-orange-500 transition-colors">NajmAI</h4>
+<p class="text-gray-500 text-sm">SaaS Framer Template</p>
+</div>
+<i class="fas fa-arrow-up-right text-orange-500 opacity-0 group-hover:opacity-100 transform -translate-y-2 translate-x-2 group-hover:translate-y-0 group-hover:translate-x-0 transition-all"></i>
+</a>
+<!-- Project 2 -->
+<a class="group flex items-center gap-6 p-4 -mx-4 rounded-2xl hover:bg-white/5 transition-colors" href="#">
+<div class="w-24 h-24 rounded-xl overflow-hidden flex-shrink-0 bg-gray-800">
+<img alt="Damas Project" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoHCnaB3DYlkDrGz6CiB7jnIft0RkSrbVpk52t_3etz9XQEGX3VrmRx4-gtiRizIF_k2mfO0gIe60-Pl1l9LJzZcsQSeaUtEVaV5a8AYBB3k9e1iAP252URWI4K8ml1rJZX63Btab9Wi39oJ80Bj5WYs-Nsw6HV1EprWeTaL_nvFUDGAcbXo63oIdZGt9docV5FHy1iWsZVZu-JnP3SDqTKr1vVe_8XCRAGBzZx15WQonUOP119WKP"/>
+</div>
+<div class="flex-1">
+<h4 class="text-xl font-bold mb-1 group-hover:text-orange-500 transition-colors">Damas</h4>
+<p class="text-gray-500 text-sm">Free Framer Template</p>
+</div>
+<i class="fas fa-arrow-up-right text-orange-500 opacity-0 group-hover:opacity-100 transform -translate-y-2 translate-x-2 group-hover:translate-y-0 group-hover:translate-x-0 transition-all"></i>
+</a>
+<!-- Project 3 -->
+<a class="group flex items-center gap-6 p-4 -mx-4 rounded-2xl hover:bg-white/5 transition-colors" href="#">
+<div class="w-24 h-24 rounded-xl overflow-hidden flex-shrink-0 bg-gray-800">
+<img alt="Majd Project" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6RT9rEkTTtDGzeskLsGcDGzKm4y2fhmXIFdo4XNi2Zz51yPlSV3aN-yMdZ8P3XMRrp0G5ZZZ0l38t8VGSzF85Cbdvho2ZJD3PC_gTVYXjUgkonna7PVBldKkDjOJm82fONwtupPL2NtwjrR1xmzkuYAfouLkSPpN01OP4gVofLVHqmpPBpuIGo33Wl3d6Uz2NNhVPWeLSHqeCUFBAdkP-hNL1_ya9Bv9CQNcRF0GoYURt1TGnXzzU"/>
+</div>
+<div class="flex-1">
+<h4 class="text-xl font-bold mb-1 group-hover:text-orange-500 transition-colors">Majd</h4>
+<p class="text-gray-500 text-sm">Free Portfolio Template</p>
+</div>
+<i class="fas fa-arrow-up-right text-orange-500 opacity-0 group-hover:opacity-100 transform -translate-y-2 translate-x-2 group-hover:translate-y-0 group-hover:translate-x-0 transition-all"></i>
+</a>
+</div>
+</section>
+<!-- END: Recent Projects Section -->
+<!-- BEGIN: Experience Section -->
+<section class="space-y-8" id="experience">
+<h2 class="section-title">
+          12 YEARS OF<br/>EXPERIENCE
+          <span class="bg-text hidden sm:block">EXPERIENCE</span>
+</h2>
+<div class="space-y-8 pl-4 border-l border-gray-800">
+<!-- Job 1 -->
+<div class="relative pl-6 pb-8 border-b border-gray-800/50 last:border-0 group">
+<div class="absolute left-[-5px] top-1.5 w-2 h-2 rounded-full bg-orange-500 ring-4 ring-[#111]"></div>
+<a class="flex justify-between items-start gap-4" href="#">
+<div>
+<h4 class="text-xl font-bold mb-2 group-hover:text-orange-500 transition-colors">PixelForge Studios</h4>
+<p class="text-gray-400 text-sm leading-relaxed mb-4 max-w-lg">
+                  Led the design team in creating user-centric mobile and web applications, improving the user experience and increasing user engagement.
+                </p>
+<span class="text-gray-600 text-xs font-semibold">Jan 2020 - Present</span>
+</div>
+<i class="fas fa-arrow-up-right text-orange-500 opacity-0 group-hover:opacity-100 transition-opacity mt-1"></i>
+</a>
+</div>
+<!-- Job 2 -->
+<div class="relative pl-6 pb-8 border-b border-gray-800/50 last:border-0 group">
+<div class="absolute left-[-5px] top-1.5 w-2 h-2 rounded-full bg-gray-600 ring-4 ring-[#111]"></div>
+<a class="flex justify-between items-start gap-4" href="#">
+<div>
+<h4 class="text-xl font-bold mb-2 group-hover:text-orange-500 transition-colors">BlueWave Innovators</h4>
+<p class="text-gray-400 text-sm leading-relaxed mb-4 max-w-lg">
+                  Developed and implemented design strategies for new product lines, collaborated closely with engineers and product managers.
+                </p>
+<span class="text-gray-600 text-xs font-semibold">Jun 2017 - Dec 2019</span>
+</div>
+<i class="fas fa-arrow-up-right text-orange-500 opacity-0 group-hover:opacity-100 transition-opacity mt-1"></i>
+</a>
+</div>
+<!-- Job 3 -->
+<div class="relative pl-6 pb-8 border-b border-gray-800/50 last:border-0 group">
+<div class="absolute left-[-5px] top-1.5 w-2 h-2 rounded-full bg-gray-600 ring-4 ring-[#111]"></div>
+<a class="flex justify-between items-start gap-4" href="#">
+<div>
+<h4 class="text-xl font-bold mb-2 group-hover:text-orange-500 transition-colors">TrendCraft Solutions</h4>
+<p class="text-gray-400 text-sm leading-relaxed mb-4 max-w-lg">
+                  Designed user interfaces for e-commerce platforms, focusing on enhancing usability and visual appeal.
+                </p>
+<span class="text-gray-600 text-xs font-semibold">Mar 2015 - May 2017</span>
+</div>
+<i class="fas fa-arrow-up-right text-orange-500 opacity-0 group-hover:opacity-100 transition-opacity mt-1"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- END: Experience Section -->
+<!-- BEGIN: Premium Tools Section -->
+<section class="space-y-8" id="tools">
+<h2 class="section-title">
+          PREMIUM<br/>TOOLS
+          <span class="bg-text hidden sm:block">TOOLS</span>
+</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
+<!-- Tool 1 -->
+<div class="flex items-center gap-4 p-3 -mx-3 rounded-xl hover:bg-white/5 transition-colors">
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-black shadow-lg">
+<i class="fab fa-framer text-2xl"></i>
+</div>
+<div>
+<h5 class="font-bold">Framer</h5>
+<p class="text-xs text-gray-500">Website Builder</p>
+</div>
+</div>
+<!-- Tool 2 -->
+<div class="flex items-center gap-4 p-3 -mx-3 rounded-xl hover:bg-white/5 transition-colors">
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-lg">
+<svg class="w-6 h-6" fill="none" viewbox="0 0 38 57" xmlns="http://www.w3.org/2000/svg"><path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z" fill="#0acf83"></path><path d="M0 47.5a9.5 9.5 0 0 1 9.5-9.5H19v9.5a9.5 9.5 0 1 1-19 0z" fill="#1abcfe"></path><path d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19z" fill="#ff7262"></path><path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z" fill="#f24e1e"></path><path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z" fill="#a259ff"></path></svg>
+</div>
+<div>
+<h5 class="font-bold">Figma</h5>
+<p class="text-xs text-gray-500">Design Tool</p>
+</div>
+</div>
+<!-- Tool 3 -->
+<div class="flex items-center gap-4 p-3 -mx-3 rounded-xl hover:bg-white/5 transition-colors">
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-[#FFC83D] shadow-lg">
+<i class="fas fa-lemon text-xl"></i>
+</div>
+<div>
+<h5 class="font-bold">Lemon Squeezy</h5>
+<p class="text-xs text-gray-500">Payments Provider</p>
+</div>
+</div>
+<!-- Tool 4 -->
+<div class="flex items-center gap-4 p-3 -mx-3 rounded-xl hover:bg-white/5 transition-colors">
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-[#10A37F] shadow-lg">
+<i class="fas fa-robot text-xl"></i>
+</div>
+<div>
+<h5 class="font-bold">ChatGPT</h5>
+<p class="text-xs text-gray-500">AI Assistant</p>
+</div>
+</div>
+<!-- Tool 5 -->
+<div class="flex items-center gap-4 p-3 -mx-3 rounded-xl hover:bg-white/5 transition-colors">
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-black shadow-lg">
+<span class="font-serif font-bold text-xl border-2 border-black rounded px-1">N</span>
+</div>
+<div>
+<h5 class="font-bold">Notion</h5>
+<p class="text-xs text-gray-500">Productivity Tool</p>
+</div>
+</div>
+<!-- Tool 6 -->
+<div class="flex items-center gap-4 p-3 -mx-3 rounded-xl hover:bg-white/5 transition-colors">
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-black shadow-lg">
+<i class="fab fa-react text-2xl"></i>
+</div>
+<div>
+<h5 class="font-bold">Nextjs</h5>
+<p class="text-xs text-gray-500">React framework</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Premium Tools Section -->
+<!-- BEGIN: Design Thoughts Section -->
+<section class="space-y-8" id="blog">
+<h2 class="section-title">
+          DESIGN<br/>THOUGHTS
+          <span class="bg-text hidden sm:block">THOUGHTS</span>
+</h2>
+<div class="space-y-8">
+<!-- Article 1 -->
+<article class="group pb-8 border-b border-gray-800/50 last:border-0">
+<a class="block" href="#">
+<div class="flex justify-between items-start gap-4 mb-3">
+<h3 class="text-xl font-bold group-hover:text-orange-500 transition-colors">Starting and Growing a Career in Web Design</h3>
+<i class="fas fa-arrow-up-right text-orange-500 opacity-0 group-hover:opacity-100 transition-opacity mt-1 flex-shrink-0"></i>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed mb-4">
+                As the Internet continues to develop and grow exponentially, jobs related to the industry do too, particularly those that relate to web design and development.
+              </p>
+<div class="flex justify-between items-center text-xs text-gray-600 font-medium">
+<span>Apr 8, 2022</span>
+<span>5min read</span>
+</div>
+</a>
+</article>
+<!-- Article 2 -->
+<article class="group pb-8 border-b border-gray-800/50 last:border-0">
+<a class="block" href="#">
+<div class="flex justify-between items-start gap-4 mb-3">
+<h3 class="text-xl font-bold group-hover:text-orange-500 transition-colors">Create a Landing Page That Performs Great</h3>
+<i class="fas fa-arrow-up-right text-orange-500 opacity-0 group-hover:opacity-100 transition-opacity mt-1 flex-shrink-0"></i>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed mb-4">
+                Whether you work in marketing, sales, or product design, you understand the importance of a quality landing page. Landing pages are standalone websites used to generate leads or sales—in other words, they help you increase your revenue.
+              </p>
+<div class="flex justify-between items-center text-xs text-gray-600 font-medium">
+<span>Mar 15, 2022</span>
+<span>6min read</span>
+</div>
+</a>
+</article>
+<!-- Article 3 -->
+<article class="group pb-8 border-b border-gray-800/50 last:border-0">
+<a class="block" href="#">
+<div class="flex justify-between items-start gap-4 mb-3">
+<h3 class="text-xl font-bold group-hover:text-orange-500 transition-colors">How Can Designers Prepare for the Future?</h3>
+<i class="fas fa-arrow-up-right text-orange-500 opacity-0 group-hover:opacity-100 transition-opacity mt-1 flex-shrink-0"></i>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed mb-4">
+                Whether you work in marketing, sales, or product design, you understand the importance of a quality landing page. Landing pages are standalone websites used to generate leads or sales—in other words, they help you increase your revenue.
+              </p>
+<div class="flex justify-between items-center text-xs text-gray-600 font-medium">
+<span>Feb 28, 2022</span>
+<span>6min read</span>
+</div>
+</a>
+</article>
+</div>
+</section>
+<!-- END: Design Thoughts Section -->
+<!-- BEGIN: Contact Section -->
+<section class="space-y-8 pb-12" id="contact">
+<h2 class="section-title">
+          LET'S WORK<br/>TOGETHER
+          <span class="bg-text hidden sm:block">TOGETHER</span>
+</h2>
+<form class="space-y-4 max-w-2xl">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="text-xs text-gray-500 font-medium ml-1" for="name">Name</label>
+<input class="w-full bg-[#1A1A1A] border-none rounded-lg focus:ring-2 focus:ring-orange-500 text-white placeholder-gray-600 text-sm py-3 px-4 transition-shadow" id="name" placeholder="Your Name" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs text-gray-500 font-medium ml-1" for="email">Email</label>
+<input class="w-full bg-[#1A1A1A] border-none rounded-lg focus:ring-2 focus:ring-orange-500 text-white placeholder-gray-600 text-sm py-3 px-4 transition-shadow" id="email" placeholder="Your@email.com" type="email"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-xs text-gray-500 font-medium ml-1" for="budget">Budget</label>
+<select class="w-full bg-[#1A1A1A] border-none rounded-lg focus:ring-2 focus:ring-orange-500 text-gray-400 text-sm py-3 px-4 appearance-none transition-shadow" id="budget">
+<option disabled="" selected="" value="">Select...</option>
+<option value="small">&lt; $5k</option>
+<option value="medium">$5k - $10k</option>
+<option value="large">&gt; $10k</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="text-xs text-gray-500 font-medium ml-1" for="message">Message</label>
+<textarea class="w-full bg-[#1A1A1A] border-none rounded-lg focus:ring-2 focus:ring-orange-500 text-white placeholder-gray-600 text-sm py-3 px-4 resize-y transition-shadow" id="message" placeholder="Message" rows="4"></textarea>
+</div>
+<button class="w-full bg-[#F26A3A] hover:bg-[#e05a2b] text-white font-bold py-4 rounded-lg transition-colors mt-4" type="button">
+            Submit
+          </button>
+</form>
+</section>
+<!-- END: Contact Section -->
+<footer class="text-center text-xs text-gray-600 pt-8 border-t border-gray-800">
+        Made by <a class="text-orange-500 hover:underline" href="#">Templyo</a> | Powered by <a class="text-orange-500 hover:underline" href="#">Framer</a>
+</footer>
+</main>
+<!-- END: Main Content Area -->
+</div>
+<!-- END: Main Layout -->
+</body></html>
