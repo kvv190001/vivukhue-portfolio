@@ -8,12 +8,13 @@ import { skillCards } from "@/data/skills";
 
 export default function Hero() {
   return (
-    <section className="space-y-12 mt-12 lg:mt-0" id="hero">
+    <section className="space-y-12 mt-12 lg:mt-12" id="hero">
       <Reveal>
         <HeroTitle lines={["SOFTWARE", "ENGINEER"]} />
         <p className="text-gray-400 light:text-gray-600 max-w-md text-sm sm:text-base leading-relaxed">
-          Passionate about creating intuitive and engaging user experiences.
-          Specialize in transforming ideas into beautifully crafted products.
+          Passionate about building production AI systems and full-stack
+          applications. Specialize in turning ideas into reliable, scalable
+          products.
         </p>
       </Reveal>
 

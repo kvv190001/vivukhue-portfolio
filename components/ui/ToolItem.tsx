@@ -1,26 +1,19 @@
-import FigmaIcon from "./FigmaIcon";
 import type { Tool } from "@/data/tools";
 
 const iconMap: Record<Tool["icon"], React.ReactNode> = {
-  framer: <i className="fab fa-framer text-2xl" />,
-  figma: <FigmaIcon />,
-  lemon: <i className="fas fa-lemon text-xl" />,
-  chatgpt: <i className="fas fa-robot text-xl" />,
-  notion: (
-    <span className="font-serif font-bold text-xl border-2 border-black rounded px-1">
-      N
-    </span>
-  ),
-  nextjs: <i className="fab fa-react text-2xl" />,
+  react: <i className="fab fa-react text-2xl" />,
+  nodejs: <i className="fab fa-node-js text-2xl" />,
+  aws: <i className="fab fa-aws text-2xl" />,
+  docker: <i className="fab fa-docker text-2xl" />,
+  java: <i className="fab fa-java text-2xl" />,
 };
 
 const iconColorMap: Record<Tool["icon"], string> = {
-  framer: "text-black",
-  figma: "",
-  lemon: "text-[#FFC83D]",
-  chatgpt: "text-[#10A37F]",
-  notion: "text-black",
-  nextjs: "text-black",
+  react: "text-[#61DAFB]",
+  nodejs: "text-[#539E43]",
+  aws: "text-[#FF9900]",
+  docker: "text-[#2496ED]",
+  java: "text-[#EA2D2E]",
 };
 
 export default function ToolItem({ name, category, icon }: Tool) {

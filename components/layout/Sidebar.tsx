@@ -4,7 +4,7 @@ import Reveal from "@/components/ui/Reveal";
 
 export default function Sidebar() {
   return (
-    <aside className="w-full lg:w-80 flex-shrink-0 lg:sticky lg:top-12 h-fit z-10">
+    <aside className="w-full lg:w-80 flex-shrink-0 lg:sticky lg:top-34 h-fit z-10">
       <Reveal className="bg-white text-black rounded-3xl p-8 shadow-2xl relative overflow-hidden text-center">
         {/* Decorative Elements */}
         <div className="absolute top-0 left-0 w-32 h-32 border-t-2 border-l-2 border-orange-500 rounded-tl-3xl opacity-20 border-dashed transform -translate-x-4 -translate-y-4" />
@@ -17,7 +17,7 @@ export default function Sidebar() {
             src={profile.avatarUrl}
             fill
             sizes="192px"
-            className="object-cover mix-blend-multiply grayscale contrast-150"
+            className="object-cover"
           />
         </div>
 

@@ -8,7 +8,7 @@ export default function Experience() {
   return (
     <section className="space-y-8" id="experience">
       <Reveal>
-        <SectionTitle lines={["12 YEARS OF", "EXPERIENCE"]} />
+        <SectionTitle lines={["WORK", "EXPERIENCE"]} />
       </Reveal>
       <StaggerGroup className="space-y-8 pl-4 border-l border-gray-800 light:border-gray-300">
         {experience.map((job) => (
