@@ -8,7 +8,7 @@ export default function Tools() {
   return (
     <section className="space-y-8" id="tools">
       <Reveal>
-        <SectionTitle lines={["PREMIUM", "TOOLS"]} />
+        <SectionTitle lines={["TECH", "STACK"]} />
       </Reveal>
       <StaggerGroup className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
         {tools.map((tool) => (
