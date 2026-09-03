@@ -7,7 +7,6 @@ import Projects from "@/components/sections/Projects";
 import Experience from "@/components/sections/Experience";
 import Education from "@/components/sections/Education";
 import Tools from "@/components/sections/Tools";
-import Blog from "@/components/sections/Blog";
 import Contact from "@/components/sections/Contact";
 
 export default function Home() {
@@ -29,7 +28,6 @@ export default function Home() {
           <Experience />
           <Education />
           <Tools />
-          <Blog />
           <Contact />
           <Footer />
         </main>
