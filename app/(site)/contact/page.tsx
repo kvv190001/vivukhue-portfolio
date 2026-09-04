@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="mt-12">
+    <div className="mt-2 lg:mt-12">
       <Contact />
     </div>
   );

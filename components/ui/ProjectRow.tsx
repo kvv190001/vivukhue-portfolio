@@ -31,7 +31,7 @@ export default function ProjectRow({ name, description, imageUrl, href }: Projec
         <p className="text-gray-500 light:text-gray-600 text-sm">{description}</p>
       </div>
       <svg
-        className="w-5 h-5 flex-shrink-0 self-start  -ml-8 text-orange-500 transition-transform duration-300 group-hover:-translate-y-2 group-hover:translate-x-2"
+        className="w-5 h-5 flex-shrink-0 self-start -ml-8 text-orange-500 transition-transform duration-300 group-hover:-translate-y-2 group-hover:translate-x-2"
         fill="none"
         stroke="currentColor"
         strokeWidth={2}

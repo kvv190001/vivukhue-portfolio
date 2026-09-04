@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function ToolsPage() {
   return (
     <>
-      <div className="mt-12">
+      <div className="mt-2 lg:mt-12">
         <Tools />
       </div>
       <Contact />

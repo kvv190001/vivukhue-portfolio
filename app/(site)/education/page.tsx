@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function EducationPage() {
   return (
     <>
-      <div className="mt-12">
+      <div className="mt-2 lg:mt-12">
         <Education />
       </div>
       <Contact />

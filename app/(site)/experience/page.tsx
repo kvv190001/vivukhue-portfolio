@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function ExperiencePage() {
   return (
     <>
-      <div className="mt-12">
+      <div className="mt-2 lg:mt-12">
         <Experience />
       </div>
       <Contact />

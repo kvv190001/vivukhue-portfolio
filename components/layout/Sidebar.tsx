@@ -1,10 +1,20 @@
+"use client";
+
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { profile } from "@/data/profile";
 import Reveal from "@/components/ui/Reveal";
 
 export default function Sidebar() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
   return (
-    <aside className="w-full lg:w-80 flex-shrink-0 lg:sticky lg:top-34 h-fit z-10">
+    <aside
+      className={`w-full lg:w-80 flex-shrink-0 lg:sticky lg:top-34 h-fit z-10 ${
+        isHome ? "order-1" : "order-2 lg:order-1"
+      }`}
+    >
       <Reveal className="bg-white text-black rounded-3xl p-8 shadow-2xl relative overflow-hidden text-center">
         {/* Profile Image */}
         <div className="relative w-48 h-56 mx-auto mb-6 rounded-2xl overflow-hidden bg-orange-600">

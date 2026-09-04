@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <>
-      <div className="mt-12">
+      <div className="mt-2 lg:mt-12">
         <Projects />
       </div>
       <Contact />
