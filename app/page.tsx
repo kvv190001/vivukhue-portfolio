@@ -20,7 +20,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 flex flex-col lg:flex-row gap-12 lg:gap-24 relative">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 mt-4 lg:mt-0 flex flex-col lg:flex-row gap-12 lg:gap-24 relative">
         <Sidebar />
         <main className="w-full flex-1 space-y-32 pb-24">
           <Hero />

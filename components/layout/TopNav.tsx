@@ -1,6 +1,18 @@
+"use client";
+
 import { navLinks } from "@/data/profile";
 
 export default function TopNav() {
+  const handleClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    if (href === "#hero") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="flex justify-center">
       <div className="flex items-center gap-4 sm:gap-6 lg:gap-8 bg-[#1a1a1a] light:bg-white border border-white/5 light:border-black/10 rounded-full px-4 sm:px-5 lg:px-6 py-2.5 lg:py-3 shadow-lg text-gray-400 light:text-gray-500 max-w-full overflow-x-auto">
@@ -10,6 +22,8 @@ export default function TopNav() {
             className="hover:text-orange-500 transition-colors"
             href={link.href}
             aria-label={link.label}
+            title={link.label}
+            onClick={(e) => handleClick(e, link.href)}
           >
             <i className={link.icon} />
           </a>
