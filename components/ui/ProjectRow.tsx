@@ -12,6 +12,8 @@ export default function ProjectRow({ name, description, imageUrl, href }: Projec
     <a
       className="group flex items-center gap-6 p-4 -mx-4 rounded-2xl hover:bg-white/5 light:hover:bg-black/5 transition-colors"
       href={href}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <div className="w-24 h-24 rounded-xl overflow-hidden flex-shrink-0 bg-gray-800 relative">
         <Image
@@ -28,7 +30,18 @@ export default function ProjectRow({ name, description, imageUrl, href }: Projec
         </h4>
         <p className="text-gray-500 light:text-gray-600 text-sm">{description}</p>
       </div>
-      <i className="fas fa-arrow-up-right text-orange-500 opacity-0 group-hover:opacity-100 transform -translate-y-2 translate-x-2 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
+      <svg
+        className="w-5 h-5 flex-shrink-0 self-start  -ml-8 text-orange-500 transition-transform duration-300 group-hover:-translate-y-2 group-hover:translate-x-2"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <path d="M7 17L17 7M17 7H9M17 7V15" />
+      </svg>
     </a>
   );
 }

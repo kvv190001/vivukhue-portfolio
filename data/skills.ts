@@ -1,12 +1,12 @@
 export const skillCards = [
   {
-    title: "AI & Backend Engineering,\nRAG, LangChain, FastAPI",
+    title: "Full-Stack, DevOps,\nCloud, AI Engineering",
     bg: "bg-[#F26A3A]",
     textColor: "text-white",
     variant: "orange" as const,
   },
   {
-    title: "React, Node.js,\nSpring Boot, AWS",
+    title: "JavaScript, Python, Java,\nAWS, Docker",
     bg: "bg-[#B9FF36]",
     textColor: "text-black",
     variant: "lime" as const,
