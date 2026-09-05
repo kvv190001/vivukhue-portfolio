@@ -17,20 +17,21 @@ export default function Sidebar() {
     >
       <Reveal className="bg-white text-black rounded-3xl p-8 shadow-2xl relative overflow-hidden text-center">
         {/* Profile Image */}
-        <div className="relative w-48 h-56 mx-auto mb-6 rounded-2xl overflow-hidden bg-orange-600">
+        <div className="relative w-48 h-56 mx-auto mb-6 rounded-2xl overflow-hidden bg-blue-600">
           <Image
             alt={profile.name}
             src={profile.avatarUrl}
             fill
             sizes="192px"
             className="object-cover"
+            priority
           />
         </div>
 
         <h1 className="text-2xl font-bold mb-2">{profile.name}</h1>
 
         <div className="flex justify-center mb-4">
-          <div className="bg-orange-500 text-white rounded-full p-1.5 shadow-lg shadow-orange-500/30">
+          <div className="bg-blue-500 text-white rounded-full p-1.5 shadow-lg shadow-blue-500/30">
             <svg
               className="w-4 h-4"
               fill="none"
@@ -54,11 +55,11 @@ export default function Sidebar() {
         </p>
 
         {/* Social Links */}
-        <div className="flex justify-center gap-4 text-orange-500">
+        <div className="flex justify-center gap-4 text-blue-500">
           {profile.socials.map((social) => (
             <a
               key={social.label}
-              className="hover:text-orange-600 transition-colors"
+              className="hover:text-blue-600 transition-colors"
               href={social.href}
               aria-label={social.label}
             >

@@ -2,13 +2,13 @@ export const projects = [
   {
     name: "Portfolio",
     description: "Personal software engineer portfolio built with Next.js",
-    imageUrl: "/projects/portfolio.png",
+    imageUrl: "/projects/portfolio.jpeg",
     href: "https://github.com/kvv190001/vivukhue-portfolio",
   },
   {
     name: "Hardhatwisdom",
     description: "A LMS platform for construction",
-    imageUrl: "/projects/hardhatwisdom.png",
+    imageUrl: "/projects/hardhatwisdom.jpeg",
     href: "https://github.com/kvv190001/hardhatwisdom",
   },
   {

@@ -1,17 +1,24 @@
+"use client";
+
 type SkillCardProps = {
   title: string;
   bg: string;
   textColor: string;
-  variant: "orange" | "lime";
+  variant: "blue" | "emerald";
+  onClick?: () => void;
 };
 
-export default function SkillCard({ title, bg, textColor, variant }: SkillCardProps) {
-  const isOrange = variant === "orange";
+export default function SkillCard({ title, bg, textColor, variant, onClick }: SkillCardProps) {
+  const isBlue = variant === "blue";
+  const isEmerald = variant === "emerald";
   return (
     <div
       className={`${bg} rounded-2xl p-6 sm:p-8 flex flex-col justify-between aspect-[5/3] sm:aspect-[4/3] group cursor-pointer relative overflow-hidden transition-transform hover:-translate-y-1`}
+      onClick={onClick}
     >
-      {isOrange ? (
+      {isBlue ? (
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white to-transparent" />
+      ) : isEmerald ? (
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white to-transparent" />
       ) : (
         <svg
@@ -30,10 +37,10 @@ export default function SkillCard({ title, bg, textColor, variant }: SkillCardPr
       )}
       <div
         className={`${textColor} ${
-          isOrange ? "bg-white/20" : "bg-black/10"
+          isBlue || isEmerald ? "bg-white/20" : "bg-black/10"
         } w-fit p-3 rounded-xl backdrop-blur-sm relative z-10`}
       >
-        {isOrange ? (
+        {isBlue || isEmerald ? (
           <svg
             className="w-6 h-6"
             fill="currentColor"
@@ -62,10 +69,12 @@ export default function SkillCard({ title, bg, textColor, variant }: SkillCardPr
         <div className="flex justify-end">
           <span
             className={`w-8 h-8 rounded-full border ${
-              isOrange ? "border-white/50" : "border-black/50"
+              isBlue || isEmerald ? "border-white/50" : "border-black/50"
             } flex items-center justify-center ${textColor} transition-colors ${
-              isOrange
-                ? "group-hover:bg-white group-hover:text-[#F26A3A]"
+              isBlue
+                ? "group-hover:bg-white group-hover:text-blue-600"
+                : isEmerald
+                ? "group-hover:bg-white group-hover:text-emerald-600"
                 : "group-hover:bg-black group-hover:text-[#B9FF36]"
             }`}
           >

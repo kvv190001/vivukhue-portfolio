@@ -1,3 +1,5 @@
+"use client";
+
 import HeroTitle from "@/components/ui/HeroTitle";
 import StatCard from "@/components/ui/StatCard";
 import SkillCard from "@/components/ui/SkillCard";
@@ -31,7 +33,16 @@ export default function Hero() {
       <StaggerGroup className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {skillCards.map((card) => (
           <StaggerItem key={card.title}>
-            <SkillCard {...card} />
+            <SkillCard
+              {...card}
+              onClick={() => {
+                const sectionId = card.variant === "blue" ? "experience" : "tools";
+                const element = document.getElementById(sectionId);
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            />
           </StaggerItem>
         ))}
       </StaggerGroup>

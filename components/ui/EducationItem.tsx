@@ -8,8 +8,8 @@ type EducationItemProps = {
 export default function EducationItem({ school, degree, period, detail }: EducationItemProps) {
   return (
     <div className="relative pl-6 pb-8 border-b border-gray-800/50 light:border-gray-300 last:border-0 group">
-      <div className="absolute left-[-5px] top-1.5 w-2 h-2 rounded-full bg-orange-500 ring-4 ring-[#111] light:ring-[#f5f5f5]" />
-      <h4 className="text-xl font-bold mb-2 group-hover:text-orange-500 transition-colors">
+      <div className="absolute left-[-5px] top-1.5 w-2 h-2 rounded-full bg-blue-500 ring-4 ring-[#111] light:ring-[#f5f5f5]" />
+      <h4 className="text-xl font-bold mb-2 group-hover:text-blue-500 transition-colors">
         {school}
       </h4>
       <p className="text-gray-400 light:text-gray-600 text-sm leading-relaxed mb-2 max-w-lg">

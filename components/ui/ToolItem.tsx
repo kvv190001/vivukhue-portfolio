@@ -6,6 +6,9 @@ const iconMap: Record<Tool["icon"], React.ReactNode> = {
   aws: <i className="fab fa-aws text-2xl" />,
   docker: <i className="fab fa-docker text-2xl" />,
   java: <i className="fab fa-java text-2xl" />,
+  fastapi: <i className="fas fa-bolt text-2xl" />,
+  azure: <i className="fab fa-microsoft text-2xl" />,
+  postgresql: <i className="fas fa-database text-2xl" />,
 };
 
 const iconColorMap: Record<Tool["icon"], string> = {
@@ -14,6 +17,9 @@ const iconColorMap: Record<Tool["icon"], string> = {
   aws: "text-[#FF9900]",
   docker: "text-[#2496ED]",
   java: "text-[#EA2D2E]",
+  fastapi: "text-[#009688]",
+  azure: "text-[#0078D4]",
+  postgresql: "text-[#336791]",
 };
 
 export default function ToolItem({ name, category, icon }: Tool) {

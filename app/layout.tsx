@@ -43,7 +43,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body
-        className="min-h-full selection:bg-orange-500 selection:text-white"
+        className="min-h-full selection:bg-blue-500 selection:text-white"
         suppressHydrationWarning
       >
         {children}

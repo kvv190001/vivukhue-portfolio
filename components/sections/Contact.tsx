@@ -18,7 +18,7 @@ export default function Contact() {
               Name
             </label>
             <input
-              className="w-full bg-[#1A1A1A] light:bg-white border border-transparent light:border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 text-white light:text-black placeholder-gray-600 light:placeholder-gray-400 text-sm py-3 px-4 transition-shadow"
+              className="w-full bg-[#1A1A1A] light:bg-white border border-transparent light:border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-white light:text-black placeholder-gray-600 light:placeholder-gray-400 text-sm py-3 px-4 transition-shadow"
               id="name"
               placeholder="Your Name"
               type="text"
@@ -32,7 +32,7 @@ export default function Contact() {
               Email
             </label>
             <input
-              className="w-full bg-[#1A1A1A] light:bg-white border border-transparent light:border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 text-white light:text-black placeholder-gray-600 light:placeholder-gray-400 text-sm py-3 px-4 transition-shadow"
+              className="w-full bg-[#1A1A1A] light:bg-white border border-transparent light:border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-white light:text-black placeholder-gray-600 light:placeholder-gray-400 text-sm py-3 px-4 transition-shadow"
               id="email"
               placeholder="Your@email.com"
               type="email"
@@ -48,7 +48,7 @@ export default function Contact() {
           </label>
           <div className="relative">
             <select
-              className="w-full bg-[#1A1A1A] light:bg-white border border-transparent light:border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 text-white light:text-black invalid:text-gray-600 light:invalid:text-gray-400 text-sm py-3 px-4 appearance-none transition-shadow"
+              className="w-full bg-[#1A1A1A] light:bg-white border border-transparent light:border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-white light:text-black invalid:text-gray-600 light:invalid:text-gray-400 text-sm py-3 px-4 appearance-none transition-shadow"
               id="budget"
               defaultValue=""
               required
@@ -71,14 +71,14 @@ export default function Contact() {
             Message
           </label>
           <textarea
-            className="w-full bg-[#1A1A1A] light:bg-white border border-transparent light:border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 text-white light:text-black placeholder-gray-600 light:placeholder-gray-400 text-sm py-3 px-4 resize-y transition-shadow"
+            className="w-full bg-[#1A1A1A] light:bg-white border border-transparent light:border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-white light:text-black placeholder-gray-600 light:placeholder-gray-400 text-sm py-3 px-4 resize-y transition-shadow"
             id="message"
             placeholder="Message"
             rows={4}
           />
         </div>
         <button
-          className="w-full bg-[#F26A3A] hover:bg-[#e05a2b] text-white font-bold py-4 rounded-lg transition-colors mt-4"
+          className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 rounded-lg transition-colors mt-4"
           type="button"
         >
           Submit
