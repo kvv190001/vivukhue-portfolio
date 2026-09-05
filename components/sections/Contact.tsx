@@ -1,14 +1,36 @@
+'use client';
+
+import { useState } from 'react';
 import SectionTitle from "@/components/ui/SectionTitle";
 import Reveal from "@/components/ui/Reveal";
+import { submitContactForm } from "@/app/actions/contact";
 
 export default function Contact() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{ type: 'success' | 'error', message: string } | null>(null);
+
+  async function handleSubmit(formData: FormData) {
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    const result = await submitContactForm(formData);
+
+    setIsSubmitting(false);
+
+    if (result.success) {
+      setSubmitStatus({ type: 'success', message: 'Message sent successfully!' });
+    } else {
+      setSubmitStatus({ type: 'error', message: result.error || 'Failed to send message' });
+    }
+  }
+
   return (
     <section className="space-y-8 pb-12" id="contact">
       <Reveal>
         <SectionTitle lines={["LET'S WORK", "TOGETHER"]} />
       </Reveal>
       <Reveal delay={0.15}>
-        <form className="space-y-4 max-w-2xl">
+        <form action={handleSubmit} className="space-y-4 max-w-2xl">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="space-y-1">
             <label
@@ -20,8 +42,10 @@ export default function Contact() {
             <input
               className="w-full bg-[#1A1A1A] light:bg-white border border-transparent light:border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-white light:text-black placeholder-gray-600 light:placeholder-gray-400 text-sm py-3 px-4 transition-shadow"
               id="name"
+              name="name"
               placeholder="Your Name"
               type="text"
+              required
             />
           </div>
           <div className="space-y-1">
@@ -34,33 +58,11 @@ export default function Contact() {
             <input
               className="w-full bg-[#1A1A1A] light:bg-white border border-transparent light:border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-white light:text-black placeholder-gray-600 light:placeholder-gray-400 text-sm py-3 px-4 transition-shadow"
               id="email"
+              name="email"
               placeholder="Your@email.com"
               type="email"
-            />
-          </div>
-        </div>
-        <div className="space-y-1">
-          <label
-            className="text-xs text-gray-500 light:text-gray-600 font-medium ml-1"
-            htmlFor="budget"
-          >
-            Budget
-          </label>
-          <div className="relative">
-            <select
-              className="w-full bg-[#1A1A1A] light:bg-white border border-transparent light:border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-white light:text-black invalid:text-gray-600 light:invalid:text-gray-400 text-sm py-3 px-4 appearance-none transition-shadow"
-              id="budget"
-              defaultValue=""
               required
-            >
-              <option disabled value="">
-                Select...
-              </option>
-              <option value="small">&lt; $5k</option>
-              <option value="medium">$5k - $10k</option>
-              <option value="large">&gt; $10k</option>
-            </select>
-            <i className="fas fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-xs text-gray-500 pointer-events-none" />
+            />
           </div>
         </div>
         <div className="space-y-1">
@@ -73,15 +75,29 @@ export default function Contact() {
           <textarea
             className="w-full bg-[#1A1A1A] light:bg-white border border-transparent light:border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-white light:text-black placeholder-gray-600 light:placeholder-gray-400 text-sm py-3 px-4 resize-y transition-shadow"
             id="message"
+            name="message"
             placeholder="Message"
             rows={4}
+            required
           />
         </div>
+        
+        {submitStatus && (
+          <div className={`p-3 rounded-lg text-sm ${
+            submitStatus.type === 'success' 
+              ? 'bg-green-500/20 text-green-400' 
+              : 'bg-red-500/20 text-red-400'
+          }`}>
+            {submitStatus.message}
+          </div>
+        )}
+        
         <button
-          className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 rounded-lg transition-colors mt-4"
-          type="button"
+          className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 rounded-lg transition-colors mt-4 disabled:opacity-50 disabled:cursor-not-allowed"
+          type="submit"
+          disabled={isSubmitting}
         >
-          Submit
+          {isSubmitting ? 'Sending...' : 'Submit'}
         </button>
         </form>
       </Reveal>
