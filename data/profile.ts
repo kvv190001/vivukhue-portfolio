@@ -9,7 +9,7 @@ export const profile = {
     { icon: "fab fa-instagram", href: "https://instagram.com/vivukhue", label: "Instagram" },
   ],
   stats: [
-    { value: "+2", label: "Years of\nExperience" },
+    { value: "+3", label: "Years of\nExperience" },
     { value: "+26", label: "Projects\nCompleted" },
     { value: "+1000", label: "Monthly\nUsers Served" },
   ],
