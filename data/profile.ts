@@ -21,5 +21,4 @@ export const navLinks = [
   { icon: "fas fa-briefcase", href: "/experience", label: "Experience" },
   { icon: "fas fa-graduation-cap", href: "/education", label: "Education" },
   { icon: "fas fa-wrench", href: "/tools", label: "Tools" },
-  { icon: "far fa-edit", href: "/contact", label: "Contact" },
 ];
