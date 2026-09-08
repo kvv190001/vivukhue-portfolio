@@ -13,7 +13,7 @@ export default function Hero() {
     <section className="space-y-12 mt-12 lg:mt-12" id="hero">
       <Reveal>
         <HeroTitle lines={["SOFTWARE", "ENGINEER"]} />
-        <p className="text-gray-400 light:text-gray-600 max-w-md text-sm sm:text-base leading-relaxed">
+        <p className="text-gray-400 light:text-gray-600 text-sm sm:text-base leading-relaxed">
           Passionate about building production AI systems and full-stack
           applications. Specialize in turning ideas into reliable, scalable
           products.
