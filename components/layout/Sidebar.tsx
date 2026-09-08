@@ -15,7 +15,7 @@ export default function Sidebar() {
         isHome ? "order-1" : "order-2 lg:order-1"
       }`}
     >
-      <Reveal className="bg-white text-black rounded-3xl p-8 shadow-2xl relative overflow-hidden text-center">
+      <Reveal className="bg-white text-black rounded-3xl p-8 shadow-2xl relative overflow-x-hidden overflow-y-hidden lg:max-h-[calc(100vh-10.5rem)] lg:overflow-y-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden text-center">
         {/* Profile Image */}
         <div className="relative w-48 h-56 mx-auto mb-6 rounded-2xl overflow-hidden bg-blue-600">
           <Image
